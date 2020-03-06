@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Layout</title>
+    <link rel="stylesheet" href="../assets/css/site.min.css">
+</head>
+
+<body class="layout-row">
+    <div id="aside" class="page-sidenav no-shrink bg-light nav-dropdown fade" aria-hidden="true">
+        <div class="sidenav h-100 modal-dialog bg-light">
+            <div class="navbar">
+                <a href="dashboard.html" class="navbar-brand">
+                    <span class="hidden-folded d-inline l-s-n-1x">Webathon</span></a>
+            </div>
+            <div class="flex scrollable hover">
+                <div class="nav-active-text-primary" data-nav>
+                    <ul class="nav">
+                        <li class="nav-header hidden-folded"><span class="text-muted">UI elements</span></li>
+                        <li><a href="#" class=""><span class="nav-icon"><i data-feather="grid"></i></span> <span class="nav-text">Components</span> <span class="nav-caret"></span></a>
+                            <ul class="nav-sub nav-mega">
+                                <li><a href="ui.alert.html" class=""><span class="nav-text">Alert</span></a></li>
+                                <li><a href="ui.button.html" class=""><span class="nav-text">Button</span></a></li>
+                                <li><a href="ui.carousel.html" class=""><span class="nav-text">Carousel</span></a></li>
+                                <li><a href="ui.color.html" class=""><span class="nav-text">Color</span></a></li>
+                                <li><a href="ui.dropdown.html" class=""><span class="nav-text">Dropdown</span></a></li>
+                                <li><a href="ui.grid.html" class=""><span class="nav-text">Grid</span></a></li>
+                                <li><a href="ui.modal.html" class=""><span class="nav-text">Modal</span></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class=""><span class="nav-icon"><i data-feather="disc"></i></span> <span class="nav-text">Form</span> <span class="nav-caret"></span></a>
+                            <ul class="nav-sub nav-mega">
+                                <li><a href="form.element.html" class=""><span class="nav-text">Form Element</span></a></li>
+                                <li><a href="form.layout.html" class=""><span class="nav-text">Form Layout</span></a></li>
+                                <li><a href="form.validation.html" class=""><span class="nav-text">Form Validation</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="main" class="layout-column flex">
+        <div id="header" class="page-header">
+            <div class="navbar navbar-expand-lg">
+                <a href="dashboard.html" class="navbar-brand d-lg-none">
+                    <span class="hidden-folded d-inline l-s-n-1x d-lg-none">Webathon</span></a>
+                <ul class="nav navbar-menu order-1 order-lg-2">
+                    <li class="nav-item dropdown">
+                        <a href="#" data-toggle="dropdown" class="nav-link d-flex align-items-center px-2 text-color"><span class="avatar w-24" style="margin: -2px"><img src="../assets/img/Profile.jpg" alt="..."></span></a>
+                        <div class="dropdown-menu dropdown-menu-right w mt-3 animate fadeIn">
+                            <a class="dropdown-item" href="#">Option 1 <span></span></a>
+                            <a class="dropdown-item" href="#">Option 2 <span></span></a>
+                            <a class="dropdown-item" href="#">Option 3 <span></span></a>
+                            <a class="dropdown-item" href="#">Logout <span></span></a>
+                        </div>
+                    </li>
+                    <li class="nav-item d-lg-none"><a class="nav-link px-1" data-toggle="modal" data-target="#aside"><i data-feather="menu"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="content" class="flex">
+            <div>
+                <div class="page-hero page-container" id="page-hero">
+                    <div class="padding d-flex">
+                        <div class="page-title">
+                            <h2 class="text-md text-highlight">Layout</h2><small class="text-muted">Grid layout in form controls</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-content page-container" id="page-content">
+                    <div class="padding">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-header"><strong>Basic form</strong></div>
+                                    <div class="card-body">
+                                        <form>
+                                            <div class="form-group"><label class="text-muted" for="exampleInputEmail1">Email address</label><input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"> <small id="emailHelp"
+                                                    class="form-text text-muted">We'll never share your email with anyone else.</small></div>
+                                            <div class="form-group"><label class="text-muted" for="exampleInputPassword1">Password</label><input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"> <small id="passwordHelp" class="form-text text-muted">Your password must be 8-20 characters long. Nothing else!</small></div>
+                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-header"><strong>Event form</strong></div>
+                                    <div class="card-body">
+                                        <form>
+                                            <div class="form-group row"><label class="col-sm-3 col-form-label">Title</label>
+                                                <div class="col-sm-9"><input id="event-title" type="text" class="form-control" placeholder="Title"></div>
+                                            </div>
+                                            <div class="form-group row"><label class="col-sm-3 col-form-label">Event type</label>
+                                                <div class="col-sm-9">
+                                                    <div class="mt-2" id="event-type">
+                                                        <div class="form-check form-check-inline"><label class="form-check-label"><input class="form-check-input" type="radio" name="type" value="Appointment"> Appointment</label></div>
+                                                        <div class="form-check form-check-inline"><label class="form-check-label"><input class="form-check-input" type="radio" name="type" value="Meeting"> Meeting</label></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row row-sm"><label class="col-sm-3 col-form-label">Start</label>
+                                                <div class="col-sm-5"><input id="event-start-date" type="date" class="form-control" placeholder="Date"></div>
+                                                <div class="col-sm-4"><input id="event-start-time" type="time" class="form-control" placeholder="Time"></div>
+                                            </div>
+                                            <div class="form-group row row-sm"><label class="col-sm-3 col-form-label">End</label>
+                                                <div class="col-sm-5"><input id="event-end-date" type="date" class="form-control" placeholder="Date"></div>
+                                                <div class="col-sm-4"><input id="event-end-time" type="time" class="form-control" placeholder="Time"></div>
+                                            </div>
+                                            <div class="form-group row"><label class="col-sm-3 col-form-label">Description</label>
+                                                <div class="col-sm-9"><textarea id="event-desc" class="form-control" rows="6"></textarea></div>
+                                            </div>
+                                            <div class="form-group row"><label class="col-sm-3"></label>
+                                                <div class="col-sm-9"><button type="button" id="btn-save" class="btn btn-block gd-primary text-white btn-rounded">Save</button></div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../assets/js/site.min.js"></script>
+
+</html>

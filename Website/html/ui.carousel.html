@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Carousel</title>
+    <link rel="stylesheet" href="../assets/css/site.min.css">
+</head>
+
+<body class="layout-row">
+    <div id="aside" class="page-sidenav no-shrink bg-light nav-dropdown fade" aria-hidden="true">
+        <div class="sidenav h-100 modal-dialog bg-light">
+            <div class="navbar">
+                <a href="dashboard.html" class="navbar-brand">
+                    <span class="hidden-folded d-inline l-s-n-1x">Webathon</span></a>
+            </div>
+            <div class="flex scrollable hover">
+                <div class="nav-active-text-primary" data-nav>
+                    <ul class="nav">
+                        <li class="nav-header hidden-folded"><span class="text-muted">UI elements</span></li>
+                        <li><a href="#" class=""><span class="nav-icon"><i data-feather="grid"></i></span> <span class="nav-text">Components</span> <span class="nav-caret"></span></a>
+                            <ul class="nav-sub nav-mega">
+                                <li><a href="ui.alert.html" class=""><span class="nav-text">Alert</span></a></li>
+                                <li><a href="ui.button.html" class=""><span class="nav-text">Button</span></a></li>
+                                <li><a href="ui.carousel.html" class=""><span class="nav-text">Carousel</span></a></li>
+                                <li><a href="ui.color.html" class=""><span class="nav-text">Color</span></a></li>
+                                <li><a href="ui.dropdown.html" class=""><span class="nav-text">Dropdown</span></a></li>
+                                <li><a href="ui.grid.html" class=""><span class="nav-text">Grid</span></a></li>
+                                <li><a href="ui.modal.html" class=""><span class="nav-text">Modal</span></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class=""><span class="nav-icon"><i data-feather="disc"></i></span> <span class="nav-text">Form</span> <span class="nav-caret"></span></a>
+                            <ul class="nav-sub nav-mega">
+                                <li><a href="form.element.html" class=""><span class="nav-text">Form Element</span></a></li>
+                                <li><a href="form.layout.html" class=""><span class="nav-text">Form Layout</span></a></li>
+                                <li><a href="form.validation.html" class=""><span class="nav-text">Form Validation</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="main" class="layout-column flex">
+        <div id="header" class="page-header">
+            <div class="navbar navbar-expand-lg">
+                <a href="dashboard.html" class="navbar-brand d-lg-none">
+                    <span class="hidden-folded d-inline l-s-n-1x d-lg-none">Webathon</span></a>
+                <ul class="nav navbar-menu order-1 order-lg-2">
+                    <li class="nav-item dropdown">
+                        <a href="#" data-toggle="dropdown" class="nav-link d-flex align-items-center px-2 text-color"><span class="avatar w-24" style="margin: -2px"><img src="../assets/img/Profile.jpg" alt="..."></span></a>
+                        <div class="dropdown-menu dropdown-menu-right w mt-3 animate fadeIn">
+                            <a class="dropdown-item" href="#">Option 1 <span></span></a>
+                            <a class="dropdown-item" href="#">Option 2 <span></span></a>
+                            <a class="dropdown-item" href="#">Option 3 <span></span></a>
+                            <a class="dropdown-item" href="#">Logout <span></span></a>
+                        </div>
+                    </li>
+                    <li class="nav-item d-lg-none"><a class="nav-link px-1" data-toggle="modal" data-target="#aside"><i data-feather="menu"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="content" class="flex">
+            <div>
+                <div class="page-hero page-container" id="page-hero">
+                    <div class="padding d-flex">
+                        <div class="page-title">
+                            <h2 class="text-md text-highlight">Carousel</h2><small class="text-muted">A slideshow component for cycling through elements</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-content page-container" id="page-content">
+                    <div class="padding">
+                        <div class="block p-3">
+                            <div id="carouselCaptions" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselCaptions" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselCaptions" data-slide-to="1"></li>
+                                    <li data-target="#carouselCaptions" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="media media-16x9 gd-primary">
+                                            <div class="media-content" style="background-image:url()"></div>
+                                        </div>
+                                        <div class="carousel-caption text-align-auto"><span class="badge badge-outline">SLIDE 1</span>
+                                            <h2 class="text-white display-5 font-weight-500 my-4">HEADING</h2>
+                                            <p class="text-fade d-none d-md-block">TAGLINE</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="media media-16x9 gd-info">
+                                            <div class="media-content" style="background-image:url()"></div>
+                                        </div>
+                                        <div class="carousel-caption text-align-auto"><span class="badge badge-outline">SLIDE 2</span>
+                                            <h2 class="text-white display-5 font-weight-500 my-4">HEADING</h2>
+                                            <p class="text-fade d-none d-md-block">TAGLINE</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="media media-16x9 gd-dark">
+                                            <div class="media-content" style="background-image:url()"></div>
+                                        </div>
+                                        <div class="carousel-caption text-align-auto"><span class="badge badge-outline">SLIDE 3</span>
+                                            <h2 class="text-white display-5 font-weight-500 my-4">HEADING</h2>
+                                            <p class="text-fade d-none d-md-block">TAGLINE</p>
+                                        </div>
+                                    </div>
+                                </div><a class="carousel-control-prev" href="#carouselCaptions" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a><a class="carousel-control-next"
+                                    href="#carouselCaptions" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../assets/js/site.min.js"></script>
+
+</html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Modal</title>
+    <link rel="stylesheet" href="../assets/css/site.min.css">
+</head>
+
+<body class="layout-row">
+    <div id="aside" class="page-sidenav no-shrink bg-light nav-dropdown fade" aria-hidden="true">
+        <div class="sidenav h-100 modal-dialog bg-light">
+            <div class="navbar">
+                <a href="dashboard.html" class="navbar-brand">
+                    <span class="hidden-folded d-inline l-s-n-1x">Webathon</span></a>
+            </div>
+            <div class="flex scrollable hover">
+                <div class="nav-active-text-primary" data-nav>
+                    <ul class="nav">
+                        <li class="nav-header hidden-folded"><span class="text-muted">UI elements</span></li>
+                        <li><a href="#" class=""><span class="nav-icon"><i data-feather="grid"></i></span> <span class="nav-text">Components</span> <span class="nav-caret"></span></a>
+                            <ul class="nav-sub nav-mega">
+                                <li><a href="ui.alert.html" class=""><span class="nav-text">Alert</span></a></li>
+                                <li><a href="ui.button.html" class=""><span class="nav-text">Button</span></a></li>
+                                <li><a href="ui.carousel.html" class=""><span class="nav-text">Carousel</span></a></li>
+                                <li><a href="ui.color.html" class=""><span class="nav-text">Color</span></a></li>
+                                <li><a href="ui.dropdown.html" class=""><span class="nav-text">Dropdown</span></a></li>
+                                <li><a href="ui.grid.html" class=""><span class="nav-text">Grid</span></a></li>
+                                <li><a href="ui.modal.html" class=""><span class="nav-text">Modal</span></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class=""><span class="nav-icon"><i data-feather="disc"></i></span> <span class="nav-text">Form</span> <span class="nav-caret"></span></a>
+                            <ul class="nav-sub nav-mega">
+                                <li><a href="form.element.html" class=""><span class="nav-text">Form Element</span></a></li>
+                                <li><a href="form.layout.html" class=""><span class="nav-text">Form Layout</span></a></li>
+                                <li><a href="form.validation.html" class=""><span class="nav-text">Form Validation</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="main" class="layout-column flex">
+        <div id="header" class="page-header">
+            <div class="navbar navbar-expand-lg">
+                <a href="dashboard.html" class="navbar-brand d-lg-none">
+                    <span class="hidden-folded d-inline l-s-n-1x d-lg-none">Webathon</span></a>
+                <ul class="nav navbar-menu order-1 order-lg-2">
+                    <li class="nav-item dropdown">
+                        <a href="#" data-toggle="dropdown" class="nav-link d-flex align-items-center px-2 text-color"><span class="avatar w-24" style="margin: -2px"><img src="../assets/img/Profile.jpg" alt="..."></span></a>
+                        <div class="dropdown-menu dropdown-menu-right w mt-3 animate fadeIn">
+                            <a class="dropdown-item" href="#">Option 1 <span></span></a>
+                            <a class="dropdown-item" href="#">Option 2 <span></span></a>
+                            <a class="dropdown-item" href="#">Option 3 <span></span></a>
+                            <a class="dropdown-item" href="#">Logout <span></span></a>
+                        </div>
+                    </li>
+                    <li class="nav-item d-lg-none"><a class="nav-link px-1" data-toggle="modal" data-target="#aside"><i data-feather="menu"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="content" class="flex">
+            <div>
+                <div class="page-hero page-container" id="page-hero">
+                    <div class="padding d-flex">
+                        <div class="page-title">
+                            <h2 class="text-md text-highlight">Modal</h2><small class="text-muted">Add dialogs to your application</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-content page-container" id="page-content">
+                    <div class="padding">
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <p>Modal style</p>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="modal-content box-shadow mb-4">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">Modal title</h5><button class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Modal content</p>
+                                            </div>
+                                            <div class="modal-footer"><button class="btn btn-light">Cancel</button> <button class="btn btn-primary">OK</button></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="modal-content box-shadow mb-4 bg-dark">
+                                            <div class="modal-header b-b">
+                                                <h5 class="modal-title">Modal title</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Modal content</p>
+                                            </div>
+                                            <div class="modal-footer b-t"><button class="btn btn-light">Cancel</button> <button class="btn btn-primary">OK</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4"></div>
+                            <div class="col-sm-3">
+                                <p>Modal size</p>
+                                <div class="mb-3"><button class="btn btn-white btn-block mb-2" data-toggle="modal" data-target="#modal">Normal</button> <button class="btn btn-white btn-block mb-2" data-toggle="modal" data-target="#modal-sm">Small size</button>
+                                    <button class="btn btn-white btn-block mb-2" data-toggle="modal" data-target="#modal-lg">Large size</button>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <p>Backdrop</p>
+                                <div class="mb-3"><button class="btn btn-white btn-block mb-2" data-toggle="modal" data-target="#modal-backdrop">Without</button> <button class="btn btn-white btn-block mb-2" data-toggle="modal" data-target="#modal-backdrop-white">white style</button>                                    <button class="btn btn-white btn-block mb-2" data-toggle="modal" data-target="#modal-backdrop-dark">Dark style</button></div>
+                            </div>
+                            <div class="col-sm-3">
+                                <p>Aside</p>
+                                <div class="mb-3"><button class="btn btn-white btn-block mb-2" data-toggle="modal" data-target="#modal-right" data-toggle-class="modal-open-aside" data-target="body">Right</button> <button class="btn btn-white btn-block mb-2" data-toggle="modal"
+                                        data-target="#modal-left" data-toggle-class="modal-open-aside" data-target="body">Left</button> <button class="btn btn-white btn-block mb-2" data-toggle="modal" data-target="#modal-top">Top</button> <button class="btn btn-white btn-block mb-2"
+                                        data-toggle="modal" data-target="#modal-bottom">Bottom</button></div>
+                            </div>
+                            <div class="col-sm-3">
+                                <p>Animation</p>
+                                <div class="mb-3 btn-groups"><button class="btn btn-white btn-block mb-2" data-toggle="modal" data-target="#modal-animate" data-toggle-class="fade-right" data-toggle-class-target=".animate">Right</button> <button class="btn btn-white btn-block mb-2"
+                                        data-toggle="modal" data-target="#modal-animate" data-toggle-class="fade-left" data-toggle-class-target=".animate">Left</button> <button class="btn btn-white btn-block mb-2" data-toggle="modal" data-target="#modal-animate"
+                                        data-toggle-class="fade-up" data-toggle-class-target=".animate">Up</button> <button class="btn btn-white btn-block mb-2" data-toggle="modal" data-target="#modal-animate" data-toggle-class="fade-down" data-toggle-class-target=".animate">Down</button></div>
+                            </div>
+                        </div>
+                        <div id="modal" class="modal fade" data-backdrop="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <div class="modal-title text-md">Modal title</div><button class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="p-4 text-center">
+                                            <p>Woohoo, you're reading this text in a modal!</p>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer"><button type="button" class="btn btn-light" data-dismiss="modal">Close</button> <button type="button" class="btn btn-primary" data-dismiss="modal">Save Changes</button></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="modal-sm" class="modal fade" data-backdrop="true">
+                            <div class="modal-dialog modal-sm">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <div class="modal-title text-md">Modal title</div><button class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="p-4 text-center">
+                                            <p>Woohoo, you're reading this text in a modal!</p>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer"><button type="button" class="btn btn-light" data-dismiss="modal">Close</button> <button type="button" class="btn btn-primary" data-dismiss="modal">Save Changes</button></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="modal-lg" class="modal fade" data-backdrop="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <div class="modal-title text-md">Modal title</div><button class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="p-4 text-center">
+                                            <p>Woohoo, you're reading this text in a modal!</p>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer"><button type="button" class="btn btn-light" data-dismiss="modal">Close</button> <button type="button" class="btn btn-primary" data-dismiss="modal">Save Changes</button></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="modal-backdrop" class="modal fade" data-backdrop="false">
+                            <div class="modal-dialog">
+                                <div class="modal-content box-shadow">
+                                    <div class="modal-header">
+                                        <div class="modal-title text-md">Modal title</div><button class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="p-4 text-center">
+                                            <p>Woohoo, you're reading this text in a modal!</p>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer"><button type="button" class="btn btn-light" data-dismiss="modal">Close</button> <button type="button" class="btn btn-primary" data-dismiss="modal">Save Changes</button></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="modal-backdrop-white" class="modal bg-white fade" data-backdrop="false">
+                            <div class="modal-dialog">
+                                <div class="modal-content box-shadow">
+                                    <div class="modal-header">
+                                        <div class="modal-title text-md">Modal title</div><button class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="p-4 text-center">
+                                            <p>Woohoo, you're reading this text in a modal!</p>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer"><button type="button" class="btn btn-light" data-dismiss="modal">Close</button> <button type="button" class="btn btn-primary" data-dismiss="modal">Save Changes</button></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="modal-backdrop-dark" class="modal bg-dark fade" data-backdrop="false">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <div class="modal-title text-md">Modal title</div><button class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="p-4 text-center">
+                                            <p>Woohoo, you're reading this text in a modal!</p>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer"><button type="button" class="btn btn-light" data-dismiss="modal">Close</button> <button type="button" class="btn btn-primary" data-dismiss="modal">Save Changes</button></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="modal-animate" class="modal fade" data-backdrop="true">
+                            <div class="modal-dialog animate">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <div class="modal-title text-md">Modal title</div><button class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="p-4 text-center">
+                                            <p>Woohoo, you're reading this text in a modal!</p>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer"><button type="button" class="btn btn-light" data-dismiss="modal">Close</button> <button type="button" class="btn btn-primary" data-dismiss="modal">Save Changes</button></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="modal-right" class="modal fade" data-backdrop="true">
+                            <div class="modal-dialog modal-right w-xl">
+                                <div class="modal-content h-100 no-radius">
+                                    <div class="modal-header">
+                                        <div class="modal-title text-md">Modal title</div><button class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="p-4 text-center">
+                                            <p>Woohoo, you're reading this text in a modal!</p>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer"><button type="button" class="btn btn-light" data-dismiss="modal">Close</button> <button type="button" class="btn btn-primary" data-dismiss="modal">Save Changes</button></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="modal-left" class="modal fade" data-backdrop="true">
+                            <div class="modal-dialog modal-left w-xl">
+                                <div class="modal-content h-100 no-radius">
+                                    <div class="modal-header">
+                                        <div class="modal-title text-md">Modal title</div><button class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="p-4 text-center">
+                                            <p>Woohoo, you're reading this text in a modal!</p>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer"><button type="button" class="btn btn-light" data-dismiss="modal">Close</button> <button type="button" class="btn btn-primary" data-dismiss="modal">Save Changes</button></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="modal-top" class="modal fade" data-backdrop="true">
+                            <div class="modal-dialog modal-top">
+                                <div class="modal-content no-radius">
+                                    <div class="modal-header">
+                                        <div class="modal-title text-md">Modal title</div><button class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="p-4 text-center">
+                                            <p>Woohoo, you're reading this text in a modal!</p>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer"><button type="button" class="btn btn-light" data-dismiss="modal">Close</button> <button type="button" class="btn btn-primary" data-dismiss="modal">Save Changes</button></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="modal-bottom" class="modal fade" data-backdrop="true">
+                            <div class="modal-dialog modal-bottom">
+                                <div class="modal-content no-radius">
+                                    <div class="modal-header">
+                                        <div class="modal-title text-md">Modal title</div><button class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="p-4 text-center">
+                                            <p>Woohoo, you're reading this text in a modal!</p>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer"><button type="button" class="btn btn-light" data-dismiss="modal">Close</button> <button type="button" class="btn btn-primary" data-dismiss="modal">Save Changes</button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="../assets/js/site.min.js"></script>
+
+</html>

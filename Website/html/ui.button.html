@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Button</title>
+    <link rel="stylesheet" href="../assets/css/site.min.css">
+</head>
+
+<body class="layout-row">
+    <div id="aside" class="page-sidenav no-shrink bg-light nav-dropdown fade" aria-hidden="true">
+        <div class="sidenav h-100 modal-dialog bg-light">
+            <div class="navbar">
+                <a href="dashboard.html" class="navbar-brand">
+                    <span class="hidden-folded d-inline l-s-n-1x">Webathon</span></a>
+            </div>
+            <div class="flex scrollable hover">
+                <div class="nav-active-text-primary" data-nav>
+                    <ul class="nav">
+                        <li class="nav-header hidden-folded"><span class="text-muted">UI elements</span></li>
+                        <li><a href="#" class=""><span class="nav-icon"><i data-feather="grid"></i></span> <span class="nav-text">Components</span> <span class="nav-caret"></span></a>
+                            <ul class="nav-sub nav-mega">
+                                <li><a href="ui.alert.html" class=""><span class="nav-text">Alert</span></a></li>
+                                <li><a href="ui.button.html" class=""><span class="nav-text">Button</span></a></li>
+                                <li><a href="ui.carousel.html" class=""><span class="nav-text">Carousel</span></a></li>
+                                <li><a href="ui.color.html" class=""><span class="nav-text">Color</span></a></li>
+                                <li><a href="ui.dropdown.html" class=""><span class="nav-text">Dropdown</span></a></li>
+                                <li><a href="ui.grid.html" class=""><span class="nav-text">Grid</span></a></li>
+                                <li><a href="ui.modal.html" class=""><span class="nav-text">Modal</span></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class=""><span class="nav-icon"><i data-feather="disc"></i></span> <span class="nav-text">Form</span> <span class="nav-caret"></span></a>
+                            <ul class="nav-sub nav-mega">
+                                <li><a href="form.element.html" class=""><span class="nav-text">Form Element</span></a></li>
+                                <li><a href="form.layout.html" class=""><span class="nav-text">Form Layout</span></a></li>
+                                <li><a href="form.validation.html" class=""><span class="nav-text">Form Validation</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="main" class="layout-column flex">
+        <div id="header" class="page-header">
+            <div class="navbar navbar-expand-lg">
+                <a href="dashboard.html" class="navbar-brand d-lg-none">
+                    <span class="hidden-folded d-inline l-s-n-1x d-lg-none">Webathon</span></a>
+                <ul class="nav navbar-menu order-1 order-lg-2">
+                    <li class="nav-item dropdown">
+                        <a href="#" data-toggle="dropdown" class="nav-link d-flex align-items-center px-2 text-color"><span class="avatar w-24" style="margin: -2px"><img src="../assets/img/Profile.jpg" alt="..."></span></a>
+                        <div class="dropdown-menu dropdown-menu-right w mt-3 animate fadeIn">
+                            <a class="dropdown-item" href="#">Option 1 <span></span></a>
+                            <a class="dropdown-item" href="#">Option 2 <span></span></a>
+                            <a class="dropdown-item" href="#">Option 3 <span></span></a>
+                            <a class="dropdown-item" href="#">Logout <span></span></a>
+                        </div>
+                    </li>
+                    <li class="nav-item d-lg-none"><a class="nav-link px-1" data-toggle="modal" data-target="#aside"><i data-feather="menu"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="content" class="flex">
+            <div>
+                <div class="page-hero page-container" id="page-hero">
+                    <div class="padding d-flex">
+                        <div class="page-title">
+                            <h2 class="text-md text-highlight">Button</h2><small class="text-muted">Button styles for actions in forms, dialogs</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-content page-container" id="page-content">
+                    <div class="padding">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <p><strong>Colors</strong></p>
+                                <div class="mb-3"><button class="btn w-sm mb-1 btn-primary">Primary</button> <button class="btn w-sm mb-1 btn-secondary">Secondary</button> <button class="btn w-sm mb-1 btn-success">Success</button> <button class="btn w-sm mb-1 btn-info">Info</button>                                    <button class="btn w-sm mb-1 btn-warning">Warning</button> <button class="btn w-sm mb-1 btn-danger">Danger</button> <button class="btn w-sm mb-1 btn-white">White</button> <button class="btn w-sm mb-1 btn-light">Light</button>                                    <button class="btn w-sm mb-1 btn-dark">Dark</button></div>
+                                <p><strong>Light color</strong></p>
+                                <div class="mb-3"><button class="btn w-sm mb-1 bg-primary-lt">Primary</button> <button class="btn w-sm mb-1 bg-secondary-lt">Secondary</button> <button class="btn w-sm mb-1 bg-success-lt">Success</button> <button class="btn w-sm mb-1 bg-info-lt">Info</button>                                    <button class="btn w-sm mb-1 bg-warning-lt">Warning</button> <button class="btn w-sm mb-1 bg-danger-lt">Danger</button> <button class="btn w-sm mb-1 bg-dark-lt">Dark</button></div>
+                                <p><strong>Outline</strong></p>
+                                <div class="mb-3"><button class="btn w-sm mb-1 btn-outline-primary">Primary</button> <button class="btn w-sm mb-1 btn-outline-info">Info</button> <button class="btn w-sm mb-1 btn-outline-success">Success</button> <button class="btn w-sm mb-1 btn-outline-warning">Warning</button>                                    <button class="btn w-sm mb-1 btn-outline-danger">Danger</button> <button class="btn w-sm mb-1 btn-outline-light">Light</button> <button class="btn w-sm mb-1 btn-outline-dark">Dark</button></div>
+                                <p><strong>Rounded</strong></p>
+                                <div class="mb-3"><button class="btn w-sm mb-1 btn-rounded btn-primary">Primary</button> <button class="btn w-sm mb-1 btn-rounded btn-secondary">Secondary</button> <button class="btn w-sm mb-1 btn-rounded btn-success">Success</button>
+                                    <button class="btn w-sm mb-1 btn-rounded btn-outline-info">Info</button> <button class="btn w-sm mb-1 btn-rounded btn-outline-warning">Warning</button> <button class="btn w-sm mb-1 btn-rounded btn-outline-danger">Danger</button></div>
+
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="mb-2">
+                                    <p>Raised button</p><button class="btn btn-raised btn-wave mb-2 w-xs red text-white">Red</button> <button class="btn btn-raised btn-wave mb-2 w-xs indigo text-white">Indigo</button> <button class="btn btn-raised btn-wave mb-2 w-xs purple text-white">Purple</button>                                    <button class="btn btn-raised btn-wave mb-2 w-xs blue text-white">Blue</button><br><button class="btn btn-raised btn-wave mb-2 w-xs green text-white">Green</button> <button class="btn btn-raised btn-wave mb-2 w-xs cyan text-white">Cyan</button>                                    <button class="btn btn-raised btn-wave mb-2 w-xs" disabled="disabled">Disabled</button>
+                                </div>
+                                <div class="mb-2">
+                                    <p>Icon</p><button class="btn btn-lg btn-raised btn-wave btn-icon btn-rounded mb-2 teal text-white"><i data-feather="plus"></i></button> <button class="btn btn-md btn-raised btn-wave btn-icon btn-rounded mb-2 green text-white"><i data-feather="arrow-down"></i></button>                                    <button class="btn btn-raised btn-wave btn-icon btn-rounded mb-2 light-green text-white"><i data-feather="check"></i></button> <button class="btn btn-raised btn-wave btn-icon btn-rounded mb-2 lime text-white"><i data-feather="more-horizontal"></i></button>                                    <button class="btn btn-raised btn-wave btn-icon btn-rounded mb-2" disabled="disabled"><i data-feather="arrow-up"></i></button>
+                                </div>
+                                <p><strong>Block button</strong></p>
+                                <div class="mb-3"><button class="btn btn-white btn-md btn-block">Block level button</button></div>
+                                <div class="mb-3"><button class="btn btn-dark btn-block">Block level button</button></div>
+                                <p><strong>Size</strong></p>
+                                <div class="mb-3"><button class="btn w-sm mb-1 btn-sm btn-primary">Small</button> <button class="btn w-sm mb-1 btn-secondary">Normal</button> <button class="btn w-sm mb-1 btn-md btn-white">Medium</button></div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../assets/js/site.min.js"></script>
+
+</html>
